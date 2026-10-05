@@ -1,0 +1,111 @@
+/* Global layout */
+body {
+    max-width: 1000px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#wrapper {
+    background-color: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Header */
+header {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+
+header h1 {
+    background-color: rgba(255,255,255,0.85);
+    padding: 10px 15px;
+    margin: 0 0 10px 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #0a3d62;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Headshot */
+.headshot {
+    width: 25%;
+    border: 4px solid #328cc1;
+    margin-bottom: 20px;
+}
+
+/* Monogram */
+#monogram {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ---------- Responsive Portfolio ---------- */
+
+#figureContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Mobile first: one column */
+#figureContainer figure {
+    width: 100%;
+    max-width: 320px;
+    margin: 0;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    padding: 10px;
+}
+
+#figureContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Tablet: two columns */
+@media (min-width: 700px) {
+    #figureContainer figure {
+        width: 45%;
+    }
+}
+
+/* Desktop: three columns */
+@media (min-width: 1000px) {
+    #figureContainer figure {
+        width: 30%;
+    }
+}
